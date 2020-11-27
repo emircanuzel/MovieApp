@@ -1,6 +1,7 @@
 # MovieApp
 
-![Xcode 9.4+](https://img.shields.io/badge/Xcode-9.4%2B-blue.svg) ![iOS 10+](https://img.shields.io/badge/iOS-11.3%2B-blue.svg) ![Swift 4+](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)
+[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-Swift-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 
 
 
