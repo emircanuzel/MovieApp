@@ -1,0 +1,6 @@
+framework module ANActivityIndicator {
+  umbrella header "ANActivityIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}

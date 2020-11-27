@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieCoverImageTableViewCell" rowHeight="430" id="Nje-je-u5A" customClass="MovieCoverImageTableViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nje-je-u5A" id="7qc-au-Gj4">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-Wj-NiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="430"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdP-TH-Qh4">
+                                <rect key="frame" x="57" y="40" width="300" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LZ0-kz-Hcb"/>
+                                    <constraint firstAttribute="height" constant="350" id="v6t-8D-Emg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="jmm-fh-8YZ">
+                                <rect key="frame" x="292" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DUm-Ki-7OY"/>
+                                    <constraint firstAttribute="width" constant="70" id="uVo-CG-0Qi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-wP-Wca">
+                                <rect key="frame" x="313.5" y="34.5" width="27.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bZL-wP-Wca" firstAttribute="centerY" secondItem="jmm-fh-8YZ" secondAttribute="centerY" id="8jR-5S-hPI"/>
+                            <constraint firstItem="fdP-TH-Qh4" firstAttribute="centerX" secondItem="bDA-Wj-NiJ" secondAttribute="centerX" id="DwP-wn-Bam"/>
+                            <constraint firstItem="fdP-TH-Qh4" firstAttribute="centerY" secondItem="bDA-Wj-NiJ" secondAttribute="centerY" id="WDa-RD-Jco"/>
+                            <constraint firstItem="fdP-TH-Qh4" firstAttribute="top" secondItem="jmm-fh-8YZ" secondAttribute="bottom" constant="-40" id="eua-KQ-kWR"/>
+                            <constraint firstItem="jmm-fh-8YZ" firstAttribute="leading" secondItem="fdP-TH-Qh4" secondAttribute="trailing" constant="-65" id="fGw-pR-xZK"/>
+                            <constraint firstItem="bZL-wP-Wca" firstAttribute="centerX" secondItem="jmm-fh-8YZ" secondAttribute="centerX" id="pw0-IU-XN8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bDA-Wj-NiJ" firstAttribute="top" secondItem="7qc-au-Gj4" secondAttribute="top" id="KmO-0f-Oiy"/>
+                    <constraint firstAttribute="trailing" secondItem="bDA-Wj-NiJ" secondAttribute="trailing" id="NDP-Zi-Zl4"/>
+                    <constraint firstItem="bDA-Wj-NiJ" firstAttribute="leading" secondItem="7qc-au-Gj4" secondAttribute="leading" id="f7z-K4-QYy"/>
+                    <constraint firstAttribute="bottom" secondItem="bDA-Wj-NiJ" secondAttribute="bottom" id="yX9-Wm-Y2X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="movieImage" destination="fdP-TH-Qh4" id="3JS-ri-2Ie"/>
+                <outlet property="rating" destination="bZL-wP-Wca" id="1o4-sK-qLj"/>
+                <outlet property="starImage" destination="jmm-fh-8YZ" id="SLA-rE-CJe"/>
+            </connections>
+            <point key="canvasLocation" x="-228.98550724637684" y="26.450892857142858"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star" width="512" height="512"/>
+    </resources>
+</document>
